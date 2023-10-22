@@ -1,74 +1,62 @@
-.container {
-  max-width: 960px;
+/* Basic styling */
+html {
+height: 175%;
+}
+body {
+background-image: linear-gradient(#F75990, rgb(255, 122, 89));
 }
 
-.icon-link > .bi {
-  width: .75em;
-  height: .75em;
+header, section, footer {
+    padding: 20px;
 }
 
-/*
- * Custom translucent site header
- */
-
-.site-header {
-  background-color: rgba(0, 0, 0, .85);
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-  backdrop-filter: saturate(180%) blur(20px);
-}
-.site-header a {
-  color: #8e8e8e;
-  transition: color .15s ease-in-out;
-}
-.site-header a:hover {
-  color: #fff;
-  text-decoration: none;
+h1, h2, h3 {
+    color: #333;
 }
 
-/*
- * Dummy devices (replace them with your own or something else entirely!)
- */
-
-.product-device {
-  position: absolute;
-  right: 10%;
-  bottom: -30%;
-  width: 300px;
-  height: 540px;
-  background-color: #333;
-  border-radius: 21px;
-  transform: rotate(30deg);
+/* Portfolio table styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
 }
 
-.product-device::before {
-  position: absolute;
-  top: 10%;
-  right: 10px;
-  bottom: 10%;
-  left: 10px;
-  content: "";
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 5px;
+table, th, td {
+    border: 1px solid #ddd;
 }
 
-.product-device-2 {
-  top: -25%;
-  right: auto;
-  bottom: 0;
-  left: 5%;
-  background-color: #e5e5e5;
+th, td {
+    padding: 10px;
+    text-align: left;
 }
 
-
-/*
- * Extra utilities
- */
-
-.flex-equal > * {
-  flex: 1;
+/* Image comparison styles */
+.image-comparison {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
-@media (min-width: 768px) {
-  .flex-md-equal > * {
+
+.before, .after {
     flex: 1;
-  }
+    text-align: center;
+}
+
+/* Contact form styles */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label, input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    background-color: #F75990;
+    color: #fff;
+    padding: 20px;
 }
